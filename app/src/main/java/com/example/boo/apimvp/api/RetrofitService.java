@@ -1,4 +1,4 @@
-package com.example.boo.apimvp.api.people;
+package com.example.boo.apimvp.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

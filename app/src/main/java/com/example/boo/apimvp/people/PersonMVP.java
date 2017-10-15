@@ -8,7 +8,7 @@ import retrofit2.Retrofit;
  * Created by boo on 15.10.17.
  */
 
-public interface PeopleMVP {
+public interface PersonMVP {
 
     interface View {
         void setName(String name);
