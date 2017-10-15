@@ -21,22 +21,12 @@ public class CitiesView extends AppCompatActivity implements CitiesMVP.View {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        //TODO:
+        //setContentView(R.layout.activity_main);
 
         presenter = new CitiesPresenter(this);
         presenter.getCities();
     }
 
-    @Override
-    public void addCities(List<String> cities) {
-        StringBuilder sb = new StringBuilder();
-        for(String stirng:cities)
-            sb.append(stirng);
-        Log.d(DEBUG_TAG, sb.toString());
-    }
 
-    @Override
-    public void showWarning(String s) {
-        Log.d(DEBUG_TAG, s);
-    }
 }

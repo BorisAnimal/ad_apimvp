@@ -23,7 +23,7 @@ public class PersonView extends AppCompatActivity implements PersonMVP.View {
 
 
         //TODO: wrong! Create your own layout
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
         presenter = new PersonPresenter(this);
         presenter.getNewPeople();
@@ -32,28 +32,6 @@ public class PersonView extends AppCompatActivity implements PersonMVP.View {
         //TODO:
     }
 
-    @Override
-    public void setName(String name) {
-        Log.d(DEBUG_TAG, name);
-        //TODO:
-    }
-
-    @Override
-    public void setDate(String date) {
-        Log.d(DEBUG_TAG, date);
-        //TODO:
-    }
-
-    @Override
-    public void setDescription(String description) {
-        Log.d(DEBUG_TAG, description);
-        //TODO:
-    }
-
-    @Override
-    public void showWarning(String message) {
-        //TODO:
-    }
 
 
 }
